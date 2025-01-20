@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+<head>
+  <title>Home page</title>
+</head>
+<body>
+<div id="content" class="border bg-gray-200 px-3 py-2 rounded-lg dark:bg-gray-600" >
+  <!-- Banner Section -->
+  <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInDown">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Pro Active Disaster Management</h2>
+      <p class="text-lg mb-8">Ultimately, the goal is to move from a reactive stance to a preventive, foresighted approach that ensures better protection and sustainable development for all.</p>
+      <a data-th-href="@{'/register'}"
+         class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get
+        Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-white ">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fa-solid fa-hashtag"></i>
+          <h3 class="text-xl font-semibold mb-2">SocialMedia</h3>
+          <p class="text-gray-600">Here you can post and share the Disaster related information</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fa-solid fa-cloud"></i>
+          <h3 class="text-xl font-semibold mb-2">Weather</h3>
+          <p class="text-gray-600">Here you can see Weather related information</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fas fa-globe text-blue-600 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">24/7 Access</h3>
+          <p class="text-gray-600">Access anytime, anywhere from any device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInUp">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">What is Disaster Management?</h2>
+      <p class="text-lg mb-8">One of the biggest challenges of disaster, or emergency, management is the need to be prepared for a wide range of contingencies. A good place to begin a discussion of disaster management is by considering what constitutes a disaster.
+     
+      </p>
+      
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">About nature!</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <p class="text-gray-600 italic">“You don’t have to sit outside in the dark. If, however, you want to look at the stars, you will find that darkness is necessary. But the stars neither require nor demand it.”</p>
+          <h4 class="text-lg font-semibold mt-4">- Annie Dillard</h4>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <p class="text-gray-600 italic">“Look at a tree, a flower, a plant. Let your awareness rest upon it. How still they are, how deeply rooted in Being. Allow nature to teach you stillness.”</p>
+          <h4 class="text-lg font-semibold mt-4">- Eckhart Tolle</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Pro Active Disaster Management. All rights reserved.</p>
+      <p>Follow us on <a href="#" class="text-blue-400">Facebook</a>, <a href="#"
+                                                                         class="text-blue-400">Twitter</a>, and <a
+              href="#" class="text-blue-400">Instagram</a>.</p>
+    </div>
+  </footer>
+</div>
+<script>
+  console.log("Home page");
+</script>
+</body>
+</html>

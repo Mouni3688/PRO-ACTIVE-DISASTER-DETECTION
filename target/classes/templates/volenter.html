@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Contact Us Page</title>
+  </head>
+  <body>
+    <div id="content">
+
+      <br>
+      <h1 class="text-5xl" style="text-align: center;">Welcome to volenter page</h1>
+      <br>
+<div class="relative overflow-x-auto">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                 Name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Link
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Category
+              </th>
+              
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                Add social media
+              </th>
+              <td class="px-6 py-4">
+                <a href="admin/socialmedia/add">Add social media</a>
+              </td>
+              <td class="px-6 py-4">
+                  This for adding post to social media
+              </td>
+              
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                Social media
+              </th>
+              <td class="px-6 py-4">
+                <a  data-th-href="@{'/admin/socialmedia'}">Social media</a>
+              </td>
+              <td class="px-6 py-4">
+                  Social media page
+              </td>
+              
+          </tr>
+          
+      </tbody>
+  </table>
+</div>
+
+      </p>
+    </div>
+    <script>
+      console.log("Home page");
+    </script>
+  </body>
+</html>
